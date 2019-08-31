@@ -29,6 +29,6 @@ public class GreedySolution {
                 }
             }
         }
-        return -1;
+        return dest == 0 ? 0 : -1;
     }
 }
