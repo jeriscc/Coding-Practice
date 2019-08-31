@@ -4,10 +4,14 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * My first try with solving this problem. It is too slow because it checks
+ * every posible increment from each position. Bad time complexity.
+ */
 public class SlowBFSSolution {
     private Queue<Integer> q;
     private HashSet<Integer> h;
-    
+
     public int jump(int[] nums) {
         if (nums.length == 1) {
             return 0;
@@ -17,7 +21,7 @@ public class SlowBFSSolution {
         q = new LinkedList<>();
         h = new HashSet<Integer>();
         addMoves(nums, 0);
-        
+
         int result = 0;
         int dest = nums.length - 1;
         while (!q.isEmpty()) {
@@ -32,7 +36,7 @@ public class SlowBFSSolution {
                 addMoves(nums, pos);
             }
         }
-        return 0;
+        return -1;
     }
 
     private void addMoves(int[] nums, int pos) {
