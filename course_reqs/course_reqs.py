@@ -1,7 +1,9 @@
 from typing import List, Dict, Set
 Vector = List[str]
 
-
+#
+# Solution seems to be O(n) time and space.
+#
 class Solution:
     # Keep track of how course levels
     course_levels = {}
