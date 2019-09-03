@@ -121,3 +121,14 @@ print(id(arr) == id(arr_deep_copy))
 print(id(arr[2]) == id(arr_deep_copy[2]))
 # False
 ```
+
+## Other Things
+
+- `len()` is O(1) time for list, tuple, string, dictionary, set, array.array, etc.
+- `thing in x` is O(n) time when `x` is a
+- [This website](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt) is a good list for complexity of common python operations.
+- Adding a duplicate item into a set doesn't change the set contents
+- `all(condition(i) for i in arr)` returns true if all `i` in `arr` returns true for `condition()`
+- `any(condition(i) for i in arr)` returns true if any `i` in `arr` returns true for `condition()`
+- if you have an array of two element arrays, you can access the two via `for x,y in arr_pairs`.
+- `list = [set() for _ in range(size)]` creates a list of empty sets with length `size`
