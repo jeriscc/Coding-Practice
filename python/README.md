@@ -122,7 +122,7 @@ print(id(arr[2]) == id(arr_deep_copy[2]))
 # False
 ```
 
-## Other Things
+## Python Tips
 
 - `len()` is O(1) time for list, tuple, string, dictionary, set, array.array, etc.
 - `thing in x` is O(n) time when `x` is a
@@ -132,3 +132,9 @@ print(id(arr[2]) == id(arr_deep_copy[2]))
 - `any(condition(i) for i in arr)` returns true if any `i` in `arr` returns true for `condition()`
 - if you have an array of two element arrays, you can access the two via `for x,y in arr_pairs`.
 - `list = [set() for _ in range(size)]` creates a list of empty sets with length `size`
+- `result // 10` integer divides `result` by 10. `result ** 2` returns `result` to the 2nd power.
+- `sum(map(int,str(n)))` sums the digits of a number `n`.
+- `for c in str` iterates through characters in `str`. Though each character will be str itself.
+- String methods `.islower()` and `isupper()` check for all lower or all uppercase. `.lower()` and `.upper()` converts to lower and uppercase.
+- `for i, c in enumerate("hello")` extracts in the index `i` and character `c` from "hello"
+- `function(i) for i in iterable` is a generator expression, which can be taken as input into functions like `str.join(...)`, `all(...)`, `any(...)`, and `list(...)`. Generator expressions don't fully evaluate the entire iterable in memory out right and instead does so one by one in the calling fucntion. Thus, it is good for short-circuiting functions like `all(...)` and `any(...)`.
