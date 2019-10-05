@@ -138,3 +138,5 @@ print(id(arr[2]) == id(arr_deep_copy[2]))
 - String methods `.islower()` and `isupper()` check for all lower or all uppercase. `.lower()` and `.upper()` converts to lower and uppercase.
 - `for i, c in enumerate("hello")` extracts in the index `i` and character `c` from "hello"
 - `function(i) for i in iterable` is a generator expression, which can be taken as input into functions like `str.join(...)`, `all(...)`, `any(...)`, and `list(...)`. Generator expressions don't fully evaluate the entire iterable in memory out right and instead does so one by one in the calling fucntion. Thus, it is good for short-circuiting functions like `all(...)` and `any(...)`.
+- `import this` is a gem.
+- Use `for i, n in enumerate(nums)` to loop through both the indeces and values of an List.
