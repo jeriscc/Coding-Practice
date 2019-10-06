@@ -140,3 +140,6 @@ print(id(arr[2]) == id(arr_deep_copy[2]))
 - `function(i) for i in iterable` is a generator expression, which can be taken as input into functions like `str.join(...)`, `all(...)`, `any(...)`, and `list(...)`. Generator expressions don't fully evaluate the entire iterable in memory out right and instead does so one by one in the calling fucntion. Thus, it is good for short-circuiting functions like `all(...)` and `any(...)`.
 - `import this` is a gem.
 - Use `for i, n in enumerate(nums)` to loop through both the indeces and values of an List.
+- `range(start, end, step)` loops from `start` to before `end` by `step` increments.
+- To access key, value of dictionary use `for key,val in dict.items()`
+- To just access key of dictionary use `for key in dict`.

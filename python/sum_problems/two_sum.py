@@ -14,3 +14,10 @@ class Solution:
                 return [prev_nums[n], i]
             prev_nums[target - n] = i
         return [-1, -1]
+
+
+def tests():
+    assert Solution().twoSum([2, 7, 11, 15], 9) == [0, 1]
+
+
+tests()
